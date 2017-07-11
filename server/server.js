@@ -1,17 +1,21 @@
 var cool = require('cool-ascii-faces');
 var express = require('express');
+var config = require('./config');
 var app = express();
 
 app.set('port', (process.env.PORT || 5000));
-
-app.use(express.static(__dirname + '/public'));
+app.use('/assets', express.static(__dirname + config.root + '/assets'));
 
 // views is directory for all template files
-app.set('views', __dirname + '/views');
+app.set('/views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-  response.render('pages/index');
+  response.render('./pages/index');
+});
+
+app.get('/test', function(request, response) {
+  response.render('pages/test');
 });
 
 app.get('/cool', function(request, response) {
