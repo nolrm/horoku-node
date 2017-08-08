@@ -10,3 +10,27 @@ npm-debug.log
 # Docker
 Dockerfile
 docker-compose.yml
+
+#_site
+.sass-cache
+
+# OS or Editor folders
+.DS_Store
+._*
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+*.sublime-project
+*.sublime-workspace
+
+# Folders to ignore
+node_modules
+bower_components
+build
+.tmp
+logs
+*.log
+vendor

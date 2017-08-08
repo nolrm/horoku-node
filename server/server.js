@@ -18,6 +18,10 @@ app.get('/test', function(request, response) {
   response.render('pages/test');
 });
 
+app.get('/trilogy-hub', function(request, response) {
+  response.render('pages/trilogy-hub');
+});
+
 app.get('/cool', function(request, response) {
   response.send(cool());
 });
