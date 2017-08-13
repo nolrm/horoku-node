@@ -14,7 +14,7 @@ app.get('/', function(request, response) {
   response.render('./pages/index');
 });
 
-app.get('/test', function(request, response) {
+app.get('/tests', function(request, response) {
   response.render('pages/test');
 });
 
