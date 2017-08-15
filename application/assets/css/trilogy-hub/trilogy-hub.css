@@ -8621,22 +8621,6 @@ html, body {
     transform: translateY(-10px);
   }
 }
-/* line 16, ../../../../source/bootstrap-sass/trilogy-hub/_mixins.scss */
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-/* line 24, ../../../../source/bootstrap-sass/trilogy-hub/_mixins.scss */
-body {
-  overflow: auto;
-  perspective: 1px;
-  transform-style: preserve-3d;
-}
-
 /*------------------------------------*\
     UTILILTY CLASSES
 \*------------------------------------*/
@@ -8722,14 +8706,9 @@ body {
 
 /* line 138, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__slider--img {
-  top: 50px;
-  left: 65px;
   position: relative;
-  -webkit-transform: translateZ(0.4px) scale(0.6);
-  transform: translateZ(0.4px) scale(0.6);
   box-shadow: 0px 3px 62px 0px rgba(0, 0, 0, 0.12);
   text-shadow: 0px 3px 62px rgba(0, 0, 0, 0.12);
-  z-index: 10;
 }
 
 /* line 150, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
@@ -8739,9 +8718,6 @@ body {
   top: 10%;
   right: 0;
   width: 40%;
-  -webkit-transform: translateZ(0.13px) scale(0.9);
-  transform: translateZ(0.13px) scale(0.9);
-  z-index: 20;
 }
 /* line 161, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__slider--content h1 {
@@ -8898,40 +8874,37 @@ body {
   position: relative;
   list-style: none;
   flex-basis: 30.333%;
-  margin: -80px 1.5% -60px;
+  margin: -80px 1.5% 40px;
   height: 450px;
   box-sizing: border-box;
-  -moz-transition: all 250ms ease-in;
-  -o-transition: all 250ms ease-in;
-  -webkit-transition: all 250ms ease-in;
-  transition: all 250ms ease-in;
   background-color: #fff;
   cursor: pointer;
+  visibility: hidden;
   box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.1);
   text-shadow: 0px 0px 23px rgba(0, 0, 0, 0.1);
-  transform: translateZ(0.2px) scale(0.8);
-  left: 80px;
+  -webkit-transition-duration: 1.3s !important;
+  /* Safari */
+  transition-duration: 1.3s !important;
 }
-/* line 309, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 313, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item:nth-child(3n-7) {
   /* or 4n+1 */
   margin-top: 0;
-  transform: translateZ(0.1px) scale(0.9);
-  left: 0;
-  margin-bottom: 0;
+  -webkit-transition-duration: 800ms !important;
+  /* Safari */
+  transition-duration: 800ms !important;
 }
-/* line 316, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 320, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item:nth-child(3n-6) {
   /* or 4n+1 */
-  left: -80px;
 }
 
-/* line 322, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 326, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--img {
   position: relative;
   overflow: hidden;
 }
-/* line 326, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 330, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--img:after {
   display: block;
   content: '';
@@ -8943,43 +8916,43 @@ body {
   opacity: 0;
 }
 
-/* line 340, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 344, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--default * {
   -moz-transition: all 250ms ease-in;
   -o-transition: all 250ms ease-in;
   -webkit-transition: all 250ms ease-in;
   transition: all 250ms ease-in;
 }
-/* line 344, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 348, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--default:hover {
   background-color: #c80850;
 }
-/* line 348, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 352, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--default:hover .trihub__item--img img {
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
-/* line 352, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 356, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--default:hover .trihub__item--img:after {
   opacity: .3;
 }
-/* line 357, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 361, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--default:hover .trihub__item--category {
   background-color: #c80850;
   color: #fff;
 }
-/* line 361, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 365, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--default:hover .trihub__item--category:before {
   background-color: #fff;
 }
-/* line 366, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 370, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--default:hover h3,
 .trihub__item--default:hover p {
   color: #fff;
 }
-/* line 372, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 376, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--default .trihub__item--category {
   position: absolute;
   bottom: 0;
@@ -8988,7 +8961,7 @@ body {
   background-color: #fff;
 }
 
-/* line 383, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 387, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--product:before {
   display: block;
   content: '';
@@ -9002,25 +8975,25 @@ body {
   -webkit-transition: all 250ms ease-in;
   transition: all 250ms ease-in;
 }
-/* line 395, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 399, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--product:hover:before {
   height: 8px;
 }
-/* line 400, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 404, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--product .trihub__item--content {
   padding-top: 32px;
 }
-/* line 404, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 408, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--product h3 {
   margin-top: 30px;
 }
 
-/* line 409, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 413, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--category {
   font-size: 10px;
   display: block;
 }
-/* line 413, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 417, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--category:before {
   content: '';
   display: inline-block;
@@ -9032,16 +9005,16 @@ body {
   background: #000;
 }
 
-/* line 425, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 429, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--content {
   padding: 12px 36px;
 }
-/* line 428, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 432, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--content h3 {
   color: #c80850;
   font-size: 20px;
 }
-/* line 433, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
+/* line 437, ../../../../source/bootstrap-sass/trilogy-hub/trilogy-hub.scss */
 .trihub__item--content p {
   font-size: 10px;
 }

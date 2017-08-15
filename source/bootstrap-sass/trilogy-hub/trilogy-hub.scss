@@ -20,7 +20,7 @@ $theme-color: #c80850;
 
 // End of magic parallax mixins
 
-@include parallax-init;
+// @include parallax-init;
 
 
 // html, body {
@@ -136,15 +136,15 @@ $theme-color: #c80850;
 }
 
 .trihub__slider--img {
-	top: 50px;
-  left: 65px;
+	// top: 50px;
+  // left: 65px;
   position: relative;
 	// @include parallax(.6);
-	-webkit-transform: translateZ(0.4px) scale(0.6);
-	transform: translateZ(0.4px) scale(0.6);
+	// -webkit-transform: translateZ(0.4px) scale(0.6);
+	// transform: translateZ(0.4px) scale(0.6);
 	box-shadow: 0px 3px 62px 0px rgba(0, 0, 0, 0.12);
   text-shadow: 0px 3px 62px rgba(0, 0, 0, 0.12);
-	z-index: 10;
+	// z-index: 10;
 }
 
 .trihub__slider--content {
@@ -154,9 +154,9 @@ $theme-color: #c80850;
   right: 0;
   width: 40%;
 	// @include parallax(.2);
-	-webkit-transform: translateZ(0.13px) scale(0.9);
-	transform: translateZ(0.13px) scale(0.9);
-	z-index: 20;
+	// -webkit-transform: translateZ(0.13px) scale(0.9);
+	// transform: translateZ(0.13px) scale(0.9);
+	// z-index: 20;
 
   h1 {
     color: $theme-color;
@@ -293,28 +293,32 @@ $theme-color: #c80850;
   position: relative;
   list-style: none;
   flex-basis: 30.333%;
-  margin: -80px 1.5% -60px;
+  margin: -80px 1.5% 40px;
   height: 450px;
   box-sizing: border-box;
-  @include transition(all 250ms ease-in);
+  // @include transition(all 250ms ease-in);
   background-color: #fff;
   cursor: pointer;
+	visibility: hidden;
 
   box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.1);
   text-shadow: 0px 0px 23px rgba(0, 0, 0, 0.1);
 
-	transform: translateZ(0.2px) scale(0.8);
-	left: 80px;
+	-webkit-transition-duration: 1.3s !important; /* Safari */
+	 transition-duration: 1.3s !important;
+
+	// transform: translateZ(0.2px) scale(0.8);
+	// left: 80px;
 
   &:nth-child(3n-7) {  /* or 4n+1 */
     margin-top: 0;
-		transform: translateZ(0.1px) scale(0.9);
-		left: 0;
-		margin-bottom: 0;
+		-webkit-transition-duration: 800ms !important; /* Safari */
+		 transition-duration: 800ms !important;
+		//  transform: translateY(60px) !important;
   }
 
 	&:nth-child(3n-6) {  /* or 4n+1 */
-    left: -80px;
+    // left: -80px;
   }
 
 }

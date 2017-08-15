@@ -1,38 +1,30 @@
 ;(function () {
     'use strict';
 
-    // window.sr = ScrollReveal();
-    // sr.reveal('.trihub__item');
+    window.sr = ScrollReveal();
+
+    var config = {
+      distance    : '80px',
+      duration    : 800,
+      viewFactor  : 0.3,
+      easing   : 'ease-in-out',
+      delay: 0.2,
+      scale      : 1,
+      afterReveal: function (domEl) {
+        // console.log('test');
+      }
+    };
+
+    var reset = {
+      reset: true,
+      viewOffset: { top: 24 }
+    }
 
 
-    // // init controller
-    // var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 100}});
-    //
-    // // create a scene
-    // // new ScrollMagic.Scene({
-    // //         duration: 100,    // the scene should last for a scroll distance of 100px
-    // //         offset: 50        // start this scene after scrolling for 50px
-    // //     })
-    // //     .setPin(".trihub__recent") // pins the element for the the scene's duration
-    // //     .addTo(controller); // assign the scene to the controller
-    //
-    //
-    //
-  	// // build scenes
-  	// new ScrollMagic.Scene({triggerElement: ".trihub__items"})
-  	// 				.setClassToggle(".trihub__item", "active") // add class toggle
-  	// 				.addTo(controller);
-  	// // new ScrollMagic.Scene({triggerElement: "#sec2"})
-  	// // 				.setClassToggle("#high2", "active") // add class toggle
-  	// // 				.addIndicators() // add indicators (requires plugin)
-  	// // 				.addTo(controller);
-  	// // new ScrollMagic.Scene({triggerElement: "#sec3"})
-  	// // 				.setClassToggle("#high3", "active") // add class toggle
-  	// // 				.addIndicators() // add indicators (requires plugin)
-  	// // 				.addTo(controller);
-  	// // new ScrollMagic.Scene({triggerElement: "#sec4"})
-  	// // 				.setClassToggle("#high4", "active") // add class toggle
-  	// // 				.addIndicators() // add indicators (requires plugin)
-  	// // 				.addTo(controller);
+    sr.reveal('.trihub__item', config);
+    sr.reveal(".trihub__item", reset);
+
+
+
 
 }());
